@@ -1,0 +1,133 @@
+
+
+body {
+    background-image: url("bakgrunn.jpg");
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+
+
+article {
+    padding: 20px;
+    color: black;
+  }
+
+  h2 {
+    color: black;
+  }
+  
+
+header {
+    background-color: #13106D;
+    color: #ebdf37;
+    padding: 1em;
+    justify-content: center;
+    text-align: center;
+
+  }
+  
+  nav {
+    background-color: #13106D;
+    color: #ebdf37;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    color: #ebdf37;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #13106D;
+ 
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    margin: 0;
+  }
+  
+  .dropdown-menu a {
+    padding: 10px;
+  }
+
+ 
+
+  
+
+
+  
+  /* Styles for the main content area */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #ebdf37;
+  }
+  
+  article {
+    margin: 2em 0;
+  }
+  
+  article img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+  }
+  
+  /* Styles for smartphones */
+  @media screen and (max-width: 600px) {
+    header {
+      text-align: center;
+    }
+  
+    nav li {
+      display: block;
+      margin: 0.5em 0;
+    }
+  
+    main {
+      padding: 0.5em;
+    }
+  }
+
+  footer {
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+  }
+  

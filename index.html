@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <title>Who Wants to Be a Millionaire Quiz</title>
+    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  </head>
+
+
+
+<body onload="NextQuestion(0)">
+
+    <header><h1>Hvem vil bli millionær?</h1>
+        <audio controls>
+        
+            <source src="onlymp3.to - $1 Millon Win Music - You Just Won A Million Dollars!!!-s8klR-wMGTQ-256k-1656424303295.mp3" type="audio/mpeg">
+            
+        </audio>
+        
+        <nav>
+            <ul>
+              <li><a href="hjem.html">Hjem</a></li>
+              <li><a href="index.html">Quiz</a></li>
+              <li class="dropdown">
+                <a href="#">Serien</a>
+                <ul class="dropdown-menu">
+                  <li><a href="amerika.html">Usa</a></li>
+                  <li><a href="england.html">Engalnd</a></li>
+                  <li><a href="india.html">India</a></li>
+                </ul>
+              </li>
+            
+            </ul>
+          </nav>
+          
+          
+
+
+    </header>
+    
+   
+    <main>
+
+        
+        <!-- creating a modal for when quiz ends -->
+        <div class="modal-container" id="score-modal">
+
+            <div class="modal-content-container">
+
+                <h1>Congratulations, Quiz Completed.</h1>
+
+                <div class="grade-details">
+                    <p>Forsøk: 10</p>
+                    <p>Feil svar : <span id="wrong-answers"></span></p>
+                    <p>Riktig svar : <span id="right-answers"></span></p>
+                    <p>Karakter : <span id="grade-percentage"></span>%</p>
+                    <p ><span id="remarks"></span></p>
+                </div>
+
+                <div class="modal-button-container">
+                    <button onclick="closeScoreModal()">Fortsett</button>
+                </div>
+
+            </div>
+        </div>
+<!-- end of modal of quiz details-->
+
+        <div class="game-quiz-container">
+
+            <div class="game-details-container">
+                <h1>Poengsum : <span id="player-score"></span> / 10</h1>
+                <h1> Spørsmål : <span id="question-number"></span> / 10</h1>
+            </div>
+
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+
+            <div class="game-options-container">
+
+
+                <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+
+
+                <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+
+
+            </div>
+
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Neste spørsmål</button>
+            </div>
+
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
