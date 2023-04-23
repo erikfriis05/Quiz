@@ -54,7 +54,7 @@ const questions = [
         optionB: "356",
         optionC: "911",
         optionD: "Taycan",
-        correctOption: "optionA"
+        correctOption: "optionB"
     },
 
     {
